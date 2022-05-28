@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         htpitemwidget.h htpitemwidget.cpp
+        htpdraglistwidget.h htpdraglistwidget.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

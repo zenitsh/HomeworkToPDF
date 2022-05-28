@@ -6,7 +6,7 @@ HtpItemWidget::HtpItemWidget(QWidget *parent, QString text, QImage img)
     m_layout = new QHBoxLayout();
     this->setLayout(m_layout);
     m_label0 = new QLabel();
-    m_label0->setPixmap(QPixmap::fromImage(img));
+    m_label0->setPixmap(QPixmap::fromImage(img).scaledToHeight(128));
     m_label1 = new QLabel();
     m_label1->setText(text);
     m_layout->addWidget(m_label0);
