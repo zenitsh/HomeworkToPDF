@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <MagickWand/MagickWand.h>
 #include <QDragEnterEvent>
 #include <QDropEvent>
 

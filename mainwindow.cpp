@@ -9,6 +9,7 @@
 #include <QFileInfo>
 #include <QImageReader>
 #include <QMimeData>
+#include <MagickWand/MagickWand.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -106,7 +107,6 @@ void MainWindow::on_btn_com_clicked()
     m_filepath1 = info.absolutePath();
     m_filename = info.fileName();
     QFile file(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"/homework_info.json");
-    qDebug()<<file.filesystemFileName();
     if(file.exists())
         file.open(QIODevice::WriteOnly);
     else
